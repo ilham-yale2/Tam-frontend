@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TAM Game</title>
+  </head>
+  <body>
+    <form action="agreement.html" method="" style="background-color: rgb(255, 234, 234);">
+      <div class="w-100  d-flex flex-wrap align-items-center  "> 
+         <div class="row w-100 mx-0">
+            <div class="widget-language">
+                <div class="ml-auto lang-setting mr-4 position-relative">
+                    <div class="d-flex align-items-center" onclick="$('#language-list').fadeToggle()">
+                        <img src="image/en.png" width="30px" alt="">
+                        <span class="mx-1">English</span>
+                        <div class=" px-1 btn-danger text-white rounded-circle" >
+                            <span class="iconify" data-icon="akar-icons:chevron-down"></span>
+                        </div>
+                    </div>
+                    <div class="language-list" id="language-list" style="display: none;">
+                        <div class="language top-rounded d-flex border-bottom px-3 py-2 align-items-center active" data-target="#language-list">
+                            <img src="image/en.png" width="30px" alt="">
+                            <span class="mx-3">English</span>
+                        </div>
+                        <div class="language bottom-rounded d-flex  px-3 py-2 align-items-center" data-target="#language-list">
+                            <img src="image/id.png" width="30px" alt="">
+                            <span class="mx-3">Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12"></div>
+            <div class="w-100 mt-3 text-center">
+                <img src="image/tam-logo 3.png" width="90px" alt="">
+            </div>
+            
+           
+            <div class="col-md-8 col-10 mx-auto card-custom mt-3  px-0">
+                <div class="card-header text-left d-flex">
+                    <h3 class="mb-0 text-white">Setting Profile</h3>
+                    <div class="btn rounded-circle btn-close ml-auto">
+                        <span class="iconify" data-icon="ep:close-bold"></span>
+                    </div>
+                </div>
+                <div class="card-body bg-white px-0 pt-4">
+                    <div class="border-bottom border-dark px-4 form-header ">
+                        <span class="iconify" data-icon="ph:user-gear-fill" data-width="25"></span>
+                        <h6 class="d-inline-block ml-3">Account Setting </h6>
+                    </div>
+                    <div class="account-body px-4 pt-2">
+                        <div class="row mx-0">
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="division">Division</label>
+                                    <input type="text" class="form-control" id="division">
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" class="form-control" id="phone">
+                                </div>
+                            </div>
+                            <div class="col-3"></div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <input type="text" class="form-control" id="country">
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control" id="city">
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <input type="text" class="form-control" id="gender">
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="age_range">Age Range</label>
+                                    <input type="text" class="form-control" id="age_range">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="border-bottom border-dark px-4 form-header ">
+                        <span class="iconify" data-icon="ph:lock-key-fill" data-width="25"></span>
+                        <h6 class="d-inline-block ml-3">Password Setting </h6>
+                    </div>
+                    <div class="account-body px-4 pt-2">
+                        <div class="row mx-0">
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="currently_password">Currently Password</label>
+                                    <input type="text" class="form-control" id="currently_password">
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="new_password">New Password</label>
+                                    <input type="text" class="form-control" id="new_password">
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label for="confirm_password">Confirm Password</label>
+                                    <input type="text" class="form-control" id="confirm_password">
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    <div class="border-bottom border-dark px-4 form-header ">
+                        <span class="iconify" data-icon="ph:globe-fill" data-width="25"></span>
+                        <h6 class="d-inline-block ml-auto">Language Setting </h6>
+                    </div>
+                    <div class="account-body px-4 d-flex py-3">
+                        <div class="lang-setting mr-4 position-relative show-top">
+                            <div class="d-flex align-items-center" onclick="$('#language-setting').fadeToggle()">
+                                <img src="image/en.png" width="30px" alt="">
+                                <span class="mx-1">English</span>
+                                <div class=" px-1 btn-danger text-white rounded-circle " >
+                                    <span class="iconify" data-icon="akar-icons:chevron-down"></span>
+                                </div>
+                            </div>
+                            <div class="language-list" id="language-setting" style="display: none;">
+                                <div class="language top-rounded d-flex border-bottom px-3 py-2 align-items-center active" data-target="#language-setting">
+                                    <img src="image/en.png" width="30px" alt="">
+                                    <span class="mx-3">English</span>
+                                </div>
+                                <div class="language bottom-rounded d-flex  px-3 py-2 align-items-center " data-target="#language-setting">
+                                    <img src="image/id.png" width="30px" alt="">
+                                    <span class="mx-3">Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-warning col-md-5 ml-auto">
+                            Update
+                        </button>
+                    </div>
+                </div>
+                <div class="card-footer py-4">
+
+                </div>
+            </div>
+            <div class="col-12"></div>
+           <div class="col-md-6 col-10 mx-auto card-custom mt-3  px-0">
+                <div class="card-header text-left d-flex">
+                    <h3 class="mb-0 text-white">Gallery</h3>
+                    <div class="btn rounded-circle btn-close ml-auto">
+                        <span class="iconify" data-icon="ep:close-bold"></span>
+                    </div>
+                </div>
+                <div class="card-body bg-white p-4">
+                    <img src="image/absasf 1.png" class="w-100" alt="">
+                </div>
+                <div class="card-footer py-4">
+
+                </div>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-md-6 col-10 mx-auto card-custom mt-3  px-0">
+                <div class="card-header text-left d-flex">
+                    <h3 class="mb-0 text-white">Gallery</h3>
+                    <div class="btn rounded-circle btn-close ml-auto">
+                        <span class="iconify" data-icon="ep:close-bold"></span>
+                    </div>
+                </div>
+                <div class="card-body bg-white p-4">
+                    <div class="w-100 py-md-5 px-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate cum earum aliquid voluptas cumque asperiores architecto molestiae, ad iure, libero pariatur hic maiores voluptatum, nulla sed ab distinctio ut dolores necessitatibus mollitia nihil est quaerat! Necessitatibus hic nihil tempore aut possimus illo consectetur eos quod distinctio, asperiores animi sit explicabo nam provident esse! Dignissimos reprehenderit numquam enim saepe perspiciatis excepturi doloremque! Quas laudantium dolorem magni! Quod quaerat aut voluptas adipisci nostrum animi alias consequatur repudiandae eum quae ipsa asperiores illum iure, veritatis hic natus error aperiam facilis dignissimos quibusdam, itaque laudantium. Similique neque placeat voluptates natus numquam voluptatibus odio dolore?
+                    </div>
+                </div>
+                <div class="card-footer py-4">
+
+                </div>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-md-6 col-10 mx-auto card-custom mt-3  px-0">
+                <div class="card-header text-left d-flex">
+                    <h3 class="mb-0 text-white">Gallery</h3>
+                    <div class="btn rounded-circle btn-close ml-auto">
+                        <span class="iconify" data-icon="ep:close-bold"></span>
+                    </div>
+                </div>
+                <div class="card-body bg-white p-4">
+                    <div class="w-100 py-md-4 px-2">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/1kolCSjuM_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card-footer py-4">
+
+                </div>
+            </div> 
+            
+         </div>
+      </div>
+    </form>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script>
+        $('.language').on('click', function(){
+            var target = $(this).data('target')
+            $(target).fadeOut()
+
+        })
+    </script>
+  </body>
+</html>

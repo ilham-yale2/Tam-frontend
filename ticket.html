@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAM | Tickets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #ccc;
+            font-family: 'Montserrat', sans-serif;
+            padding: 100px;
+        }
+
+        .text-white{
+            color: white;
+        }
+
+        .content{
+            margin: auto;
+            padding-bottom: 0px;
+            background-image: url(image/Ticket.jpg);
+            background-size: 100% auto;
+        }
+
+        .container{
+            padding: 50px;
+            padding-top: 80px;
+            position: relative;
+        }
+        h2,h5{
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+        }
+
+        .mb-1{
+            margin-bottom: .5rem;
+        }
+
+        .ticket-number{
+            margin-bottom: 5rem;
+        }
+
+        .btn-blue{
+            background-color: #01D3D3;
+            padding: 10px;
+            color: white;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 3rem;
+        }
+        .d-flex{
+            display: flex;
+            width: 100%;
+        }
+
+        td{
+            padding-left: 0px;
+        }
+        table{
+            border-spacing: 0px;
+            margin-bottom: 2rem;
+        }
+
+        .logo-tam{
+            position: absolute;
+            bottom: 30px;
+            right: 50px;
+            width: 200px;
+        }
+
+        table th:nth-child(1){
+            width: 200px;
+        }
+
+        .footer{
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+        }
+
+
+        .footer a{
+            color: #DF2522!important;
+            font-weight: 600;
+        }
+        @media(max-width: 950px){
+            .logo-tam{
+                width: 100px;
+            }
+
+            table th:nth-child(1){
+                width: auto;
+            }
+            table td:nth-child(3){
+                padding-left: 9px;
+            }
+        }
+
+        @media(max-width: 835px){
+            .container{
+                background-size: cover;
+            }
+
+            body{
+                padding: 30px;
+            }
+
+        }
+
+        @media(max-width:680px){
+            .logo-tam{
+                top: 40%;
+                bottom: unset;
+            }
+        }
+        @media(max-width:580px){
+            .logo-tam{
+                top: 40px;
+                width: 40px;
+                right: 20px;
+            }
+            .container{
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <h5 class="text-white mb-1">
+                Ticket Number
+            </h5>
+            <h2 class="text-white ticket-number">TAM34258465</h2>
+            <div class="d-flex">
+                <div class="btn-blue">
+                    Virtual Exhibition
+                </div>
+            </div>
+            <table width="100%" class="text-white">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td>Galuh Kumala Fitri</td>
+                </tr>
+                <tr>
+                    <td>Event Name</td>
+                    <td>:</td>
+                    <td>TAM</td>
+                </tr>
+                <tr>
+                    <td>Event Schedule</td>
+                    <td>:</td>
+                    <td>30 Sep 2021 19:00 - 20:30</td>
+                </tr>
+            </table>
+            <h5><a class="text-white" href="#">View Ticket</a></h5>
+            <img src="image/tam-logo 2.png" class="logo-tam" alt="">
+        </div>
+        <div class="footer">
+            <a href="#">TAM.id</a>
+        </div>
+    </div>
+</body>
+</html>
