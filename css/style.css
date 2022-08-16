@@ -214,6 +214,7 @@
     background-image: url(../image/0001-0360.gif);
   }
 
+
   .door-1{
     left: 21%;
     bottom: 20%;
@@ -236,6 +237,21 @@
   .content-lobby{
     background-size: cover;
   }
+
+  .content-login{
+    background-image: url(../image/home.png);
+  }
+
+  .tagline-login{
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .btn-danger{
+    background-color: #DF2522;
+  }
+
+  
 
   @media(max-width:1230px){
     .door-1{
@@ -271,11 +287,20 @@
         background-size: cover;
 
     }
+    #modal-login{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:  translate(-50%, -50%);
+    }
+
+    .tagline-login{
+        font-size: 30px;
+    }
+  }
   @media (max-width:680px){
     .door-1{
         left: 7%;
     }
-  }
-
 
   }
