@@ -251,7 +251,14 @@
     background-color: #DF2522;
   }
 
+  .border-secondary{
+    border-color: rgb(197, 197, 197)!important;
+  }
   
+
+  .media-question *{
+    max-height: 300px;
+  }
 
   @media(max-width:1230px){
     .door-1{
@@ -291,11 +298,16 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform:  translate(-50%, -50%);
+        transform:  translate(-50%, -50% );
     }
 
     .tagline-login{
         font-size: 30px;
+    }
+
+    .media-question *{
+        min-height: unset;
+        width: 100%;
     }
   }
   @media (max-width:680px){
