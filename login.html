@@ -41,34 +41,31 @@
          <div class="px-5">
             <div class="row w-100 mx-0 px-md-5">
                 <div class="col-md-5 mr-auto px-0">
-                    <h2 class="text-uppercase tagline-login">
+                    <h2 class="text-uppercase tagline-login mt-5 mt-md-0 mb-4 mb-md-0">
                         Value socialization
                         Personal data protection & Anti bribery
                     </h2>
 
-                    <button class="btn btn-danger px-5 rounded-pill mt-3" id="button-login" onclick="toggleModal()"><span class="px-md-5">Login</span></button>
+                    <!-- <button class="btn btn-danger px-5 rounded-pill mt-3 d-block d-md-none" id="button-login" onclick="toggleModal()"><span class="px-md-5">Login</span></button> -->
                 </div>         
-                <div class="col-md-5 col-10 card-custom mx-auto mx-md-0 px-0" id="modal-login"  style="display: none;">
+                <div class="col-md-5 col-10 card-custom mx-auto mx-md-0 px-0 " id="modal-login" >
                     <div class="card-header text-left d-flex">
                         <h3 class="mb-0 text-white">Login</h3>
-                        <div class="btn rounded-circle btn-close ml-auto" onclick="toggleModal()">
-                            <span class="iconify" data-icon="ep:close-bold"></span>
-                        </div>
                     </div>
                     <div class="card-body bg-white  pt-4">
                         <div class="px-3">
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="text" name="email" id="email" class="form-control form-custom">
+                                <label for="ticket_code">Ticket Code</label>
+                                <input type="text" name="ticket_code" id="ticket_code" class="form-control form-custom">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
                                 <input type="password" name="password" id="password" class="form-control form-custom">
                             </div>
                         </div>
-                        <div class="px-3 my-4">
+                        <a href="agreement.html" class="px-3 my-4 ">
                             <button class="btn btn-warning w-100 text-center font-weight-bold py-3 rounded-pill">Login</button>
-                        </div>
+                        </a>
                     </div>
                     <div class="card-footer">
                         <div class="text-center text-white py-2">Lorem ipsum dolor sit amet consectetur.</div>
@@ -86,10 +83,6 @@
 
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script>
-        function toggleModal(){
-            $('#modal-login').fadeToggle('slow')
-            $('#button-login').fadeToggle('slow')
-        }
     </script>
   </body>
 </html>

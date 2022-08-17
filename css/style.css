@@ -260,6 +260,13 @@
     max-height: 300px;
   }
 
+  .disabled *{
+    cursor: not-allowed;
+  }
+
+
+
+
   @media(max-width:1230px){
     .door-1{
         bottom: 30%;
@@ -294,12 +301,7 @@
         background-size: cover;
 
     }
-    #modal-login{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform:  translate(-50%, -50% );
-    }
+    
 
     .tagline-login{
         font-size: 30px;
