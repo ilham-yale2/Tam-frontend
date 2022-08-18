@@ -11,6 +11,9 @@
     <title>TAM Game</title>
   </head>
   <body>
+    <div class="btn-logout">
+        <img src="image/logout.png" class="w-100 image-logout" alt="">
+    </div>
     <form action="" method="post">
       <div class="w-100 content d-flex flex-wrap align-items-center  content-lobby"> 
           <div class="widget-language">
@@ -62,12 +65,12 @@
             </div>
            
          </div>
-         <div class="hall-door door-1 position-absolute">
+         <div class="hall-door door-1 position-absolute" >
              <h3 class=" text-center">
                  Hall AB
              </h3>
-            <a href="#" class="row justify-content-center ">
-                <img src="image/door.png" alt="" > 
+            <a href="#" class="row justify-content-center door-complete">
+                <img src="image/clear.png"  alt="" > 
             </a>
          </div>
          <div class="hall-door door-2 position-absolute">
@@ -131,6 +134,16 @@
                 title: "Oops..!",
                 text: "Message text",
                 icon: "error",
+                button: "Okay",
+            });
+        })
+
+        $('.door-complete').on('click', function(e){
+            e.preventDefault()
+            swal({
+                title: "Done..!",
+                text: "Message text",
+                icon: "success",
                 button: "Okay",
             });
         })
