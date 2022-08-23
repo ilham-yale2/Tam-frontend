@@ -11,8 +11,11 @@
     <title>TAM Game</title>
   </head>
   <body>
-    <div class="btn-logout">
+    <div class="btn-logout btn-action">
         <img src="image/logout.png" class="w-100 image-logout" alt="">
+    </div>
+    <div class="button-info btn-action" id="btn_info">
+        <img src="image/info.png" class="w-100 image-logout" alt="">
     </div>
     <form action="" method="post">
       <div class="w-100 content d-flex flex-wrap align-items-center  content-lobby"> 
@@ -65,6 +68,64 @@
             </div>
            
          </div>
+         <div class="row w-100 mx-0 position-relative z-100" id="modal-guide" style="display: none;">
+            <div class="col-md-8 col-10 mx-auto card-custom mt-3  px-0">
+                <div class="card-header text-left d-flex align-items-center">
+                    <h5 class="mb-0 text-white">Landing Page Guide</h5>
+                    <div class="btn rounded-circle btn-close ml-auto" data-target="#modal-guide">
+                        <span class="iconify" data-icon="ep:close-bold"></span>
+                    </div>
+                </div>
+                <div class="card-body bg-white px-0 pt-4 ">
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <h4 class="text-danger text-center mb-5">Hall AB</h4>
+
+                            <div class="guide">
+                                <h6>Bribery gift public official</h6>
+                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut convallis adipiscing est. Suscipit ut eget feugiat in sagittis venenatis quisque viverra sapien. </p>
+                            </div>
+                            <div class="guide">
+                                <h6>Bribery / kick back</h6>
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut convallis adipiscing est. Suscipit ut eget feugiat in sagittis venenatis quisque viverra sapien. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="text-danger text-center mb-5">Hall AB</h4>
+
+                            <div class="guide">
+                                <h6>Collecting</h6>
+                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut convallis adipiscing est. Suscipit ut eget feugiat in sagittis venenatis quisque viverra sapien. </p>
+                            </div>
+                            <div class="guide">
+                                <h6>Storing</h6>
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut convallis adipiscing est. Suscipit ut eget feugiat in sagittis venenatis quisque viverra sapien. 
+                                </p>
+                            </div>
+                            <div class="guide">
+                                <h6>Transfer</h6>
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut convallis adipiscing est. Suscipit ut eget feugiat in sagittis venenatis quisque viverra sapien. 
+                                </p>
+                            </div>
+                            <div class="guide">
+                                <h6>Data</h6>
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut convallis adipiscing est. Suscipit ut eget feugiat in sagittis venenatis quisque viverra sapien. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer py-4">
+
+                </div>
+            </div>
+           
+         </div>
          <div class="hall-door door-1 position-absolute" >
              <h3 class=" text-center">
                  Hall AB
@@ -100,7 +161,7 @@
                 $('#modal-agreement').addClass('d-none')
             }, 1000);
             $('.hall-door').fadeToggle('slow')
-
+            $('.btn-action').fadeToggle('slow')
             return false;
         })
         $('#agreement').change(function(){
@@ -146,6 +207,15 @@
                 icon: "success",
                 button: "Okay",
             });
+        })
+
+        $('#btn_info').on('click', function(){
+            $('#modal-guide').fadeIn('slow')
+        })
+
+        $('.btn-close').on('click', function(){
+            var target = $(this).data('target')
+            $(target).fadeToggle('slow')
         })
     </script>
   </body>
