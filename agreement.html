@@ -17,6 +17,32 @@
     <div class="button-info btn-action" id="btn_info">
         <img src="image/info.png" class="w-100 image-logout" alt="">
     </div>
+    <div class="navbar-head btn-action">
+        <button class="btn btn-danger btn-toggle-nav">
+            <span class="iconify" data-icon="icon-park-outline:hamburger-button" data-width="30"></span>
+        </button>
+    </div>
+    <div class="navbar-link action" style="display: none;">
+        <ul>
+            <li>
+                <a href="#">link 1</a>
+            </li>
+            <li>
+                <a href="#">link 1</a>
+            </li>
+            <li>
+                <a href="#" data-target="#sub-1" class="have-sub d-flex">
+                    <span class="mr-auto">link1 </span>
+                    <span data-width="26" class="iconify" data-icon="gridicons:dropdown"></span>
+                </a>
+                <ul class="pl-2 has-sub" style="display: none;" id="sub-1">
+                    <li><a href="#">sub-link</a></li>
+                    <li><a href="#">sub-link</a></li>
+                    <li><a href="#">sub-link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <form action="" method="post">
       <div class="w-100 content d-flex flex-wrap align-items-center  content-lobby"> 
           <div class="widget-language">
@@ -161,7 +187,7 @@
                 $('#modal-agreement').addClass('d-none')
             }, 1000);
             $('.hall-door').fadeToggle('slow')
-            $('.btn-action').fadeToggle('slow')
+            $('.btn-action , .action').fadeIn('slow')
             return false;
         })
         $('#agreement').change(function(){
@@ -217,6 +243,17 @@
             var target = $(this).data('target')
             $(target).fadeToggle('slow')
         })
+
+        $('.have-sub').on('click', function(){
+            var target = $(this).data('target')
+            console.log(target);
+            $(target).slideToggle()
+        })
+
+        $('.btn-toggle-nav').on('click',function(){
+            $('.navbar-link').toggleClass('show')
+        })
+
     </script>
   </body>
 </html>

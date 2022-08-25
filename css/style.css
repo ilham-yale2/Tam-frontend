@@ -307,6 +307,51 @@
   font-size: 13px;
 }
 
+.navbar-head{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.navbar-link{
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  border-radius: 10px;
+  background-color: #DF2522;
+  transform: translateX(-120%);
+  transition: .3s ease-in-out;
+  opacity: .5;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+.navbar-link.show{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+
+.navbar-link ul{
+  list-style: none;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  margin-bottom: 0px;
+  padding-inline-start: 0px;
+
+}
+
+.navbar-link ul li {
+  background-color: #DF2522;
+  padding: 8px 14px;
+}
+
+.navbar-link ul li a{
+  color: white;
+  text-decoration: unset;
+}
+
+
 @keyframes button_logout{
     0% {
         opacity: .9;
